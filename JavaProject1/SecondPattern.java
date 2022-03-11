@@ -1,5 +1,5 @@
 import java.util.*;
-public class RhombusPattern {
+public class SecondPattern {
     public static void main(String args[]){
         int n = 5;
 
