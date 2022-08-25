@@ -1,0 +1,43 @@
+
+//the problem is to find nth prime number
+
+
+
+public class Prime {
+	
+	public static boolean isPrime(int n){
+		
+		if(n == 1 || n == 0)
+			return false;
+		
+	
+			
+		for(int i=2; i<n; i++) {
+			if(n % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public static void main(String[] args) {
+		
+		int i = 1;
+	
+		int nth = 2; //i.e the 5th prime number which is going to be 11 (2,3,5,7,11,13,17,19,23,29)
+		
+		int count = 0; // a count to keep a track of prime numbers i.e count of prime numbers
+		
+		while(count < nth) {
+			i++;
+			if(isPrime(i)) {
+				count++;
+			}
+			
+		
+		}
+		System.out.print(i);
+
+	}
+
+}
